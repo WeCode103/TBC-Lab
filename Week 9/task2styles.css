@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family:Verdana, sans-serif;
+    background-color: #00BFFF ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Main_Container{
+   width:90vw;
+   heigh:90vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 2px solid black;
+    
+}
+.Header_Section,.Footer_Section{
+  width:100%;
+  height:25%;
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ccaa66 ;
+
+}
+.Header_Section h1{
+  font-size: 5.5rem;
+  color:#330000;
+  text-shadow: 2px 3px 3px rgb(177, 27, 25);
+}
+.Column_Section{
+  width:90vw;
+  height:80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+}
+.column1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+
+}
+.Nav_Menu{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #E8D882 ;
+}
+.Nav_Menu ul{
+    margin-left:30px;
+}
+.Nav_Menu ul li{
+    list-style: none;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    justify-content: center;
+    font-size: 3.5rem;
+    align-text: left;
+}
+.Nav_Menu ul li a{
+    text-decoration:none;
+    color:blue
+
+}
+.Nav_Menu ul li a:visited{
+  color:rgb(83, 0, 177);
+    
+}
+
+.column2{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1e8b0 ;
+    border: 2px solid black;
+}
+.Main_Content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    margin-top:50px;
+    padding: 20px;
+    
+}
+.text{
+    width: 50vw;
+    font-size: 3.5rem;
+    color: #330000;
+    margin-top: 20px;
+    
+    
+}
+.Main_Content ul {
+    width: 100%;
+    height: 50%;
+    font-size: 3.5rem;
+    color: #330000;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding-left:50px;
+}
+.Main_Content ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 15%;
+    margin-top:10px;
+}
+img{
+   width:800px;
+   height:800px;
+   margin-top:60px;
+   transform:translateX(-200px)
+  
+   
+  
+}
+.footer_text{
+    font-size:20px
+   
+}
+.footer_text a{
+    color:blue;
+}
