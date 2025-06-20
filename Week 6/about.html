@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About</title>
+  <style>
+    /* Smooth scrolling for the whole page */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      width: 100%;
+      height: 100vh;
+      animation: fadeInUp 2s ease forwards;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Different background colors */
+    section:first-of-type {
+      background-color: rgb(242, 209, 166);
+    }
+
+    section#contact {
+      background-color: antiquewhite;
+      font-size: 5rem;
+      flex-direction: column;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    /* Large headings, reset margin */
+    h1 {
+      font-size: 5rem;
+      margin: 0;
+    }
+
+    /* Hover effect on contact */
+    section#contact:hover h1 {
+      color: #c85f5f;
+      text-shadow: 2px 2px 8px rgba(200, 95, 95, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>This is very beginning of the About Section.</h1>
+  </section>
+
+  <section id="contact" title="Click to contact us">
+    <h1>Please Contact US to get in touch.....</h1>
+  </section>
+</body>
+</html>

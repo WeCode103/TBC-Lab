@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            align-items: center;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .search-form{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            border: 1px solid #333;
+            background-color: #f9f9f9;
+        }
+        .form-fieldset {
+            border: none;
+            display: flex;
+            margin-left: 40px;
+            flex-direction: column;
+            padding: auto;
+            
+        }
+       
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .form-fieldset hr{
+            width: 105%;
+            border: 1px solid #4d4d4d;
+            margin-left: -15px;  
+        }
+        
+       
+        label {
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            margin-top: 10px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 10px;
+            cursor: pointer;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+       }
+       input[type="radio"] {
+            margin-right: 5px;
+            accent-color:rgb(26, 136, 220);
+        }
+        input[type="search"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 10px;
+            }
+            .search-form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <form class="search-form">
+        <fieldset class="form-fieldset">
+        <h1 id="search-label">Search our web site!</h1>
+        <br>
+        <hr>
+        <p>Where do you want to search?</p>
+        <label for="Option1">
+        <input type="radio" id="option1" name="option" required>
+        Whole site
+    </label>
+        <label for="Option2">
+        <input type="radio" id="option2" name="option" >
+        Business Partners Section</label>
+        <label for="Option3">
+        <input type="radio" id="option3" name="option" >
+         Corporate Communication Section </label>
+        <label for="Option4">
+        <input type="radio" id="option4" name="option" >
+         Lotus Education Section</label>
+        <label for="search">Enter a word or two that we can search on:
+        <input type="search" id="search" name="search" placeholder="Search..." >
+        </label>
+        </fieldset>
+        <div class="buttons">
+        <button type="button">Submit</button>
+        <button type="button">Clear</button>
+        </div>
+    
+    </form>
+    </div>
+    
+</body>
+</html>
