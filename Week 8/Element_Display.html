@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Array Input Example</title>
+
+  <script>
+    let array = []; // Initialize the array
+    let x = 0;      // Track current index
+
+    function add_item_to_array() {
+      array[x] = document.getElementById("text1").value;
+      alert("Element: " + array[x] + " added at index " + x);
+      x++;
+      document.getElementById("text1").value = "";
+    }
+
+    function display_array() {
+      let e = "<hr/>";
+      for (let y = 0; y < array.length; y++) {
+        e += "Element " + y + " = " + array[y] + "<br/>";
+      }
+      document.getElementById("Result").innerHTML = e;
+    }
+  </script>
+</head>
+<body style="display: flex;
+flex-direction: column;
+justify-content: center;
+gap:20px;
+align-items: center;
+height: 100vh;
+;">
+  <input type="text" id="text1"  style="border: 2px solid hsl(180, 60%, 70%);width: 300px;" />
+  <div style="display: flex;
+justify-content: center;
+gap:20px;
+align-items: center;
+
+
+
+">
+  <input type="button" value="Clear" onclick="document.getElementById('text1').value = '';"/>
+  <input type="button" value="Add" onclick="add_item_to_array();" />
+  <input type="button" value="Display" onclick="display_array();" />
+  <div id="Result"></div>
+  </div>
+</body>
+</html>

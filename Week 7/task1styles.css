@@ -1,0 +1,185 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18PX;
+}
+#container{
+    width:560px; 
+    height: 400px;
+   
+    display: flex;
+    margin: 100px auto;
+    border: 2px solid #000;
+    background-color:rgb(255, 251, 139);
+}
+
+.first_container{
+    width:35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column1,.column2,.column3{
+    width: 180px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border:1px solid #000;
+    margin-top:5px;
+    margin-left:5px;
+    box-sizing: border-box;
+}
+
+
+
+.column1 h1,.column2 h1,.column3 h1{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+.Blue{
+    width: 180px;
+    height: 85%;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:4px;
+    background-color: rgb(154, 219, 230);
+    color: #000;
+    border: 1px solid #000;
+    box-sizing: border-box;
+
+}
+.Blue p{
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    margin: 2px
+    font-size: 15px;
+   
+}
+.Blue ol{
+   width:inherit;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.Blue ol li{
+    margin: 5px 0;
+}
+.largecontainer{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.large{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100%;
+}
+
+
+
+.column2,.column3{
+    width: 180px;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border:1px solid #000;
+    margin-top:5px;
+    margin-left:5px;
+    box-sizing: border-box;
+}
+
+.Yellow{
+    width: 180px;
+    height: 48%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 253, 71);
+    border:1px solid #000;
+    margin-top:5px;
+    margin-left:5px;
+    box-sizing: border-box;
+}
+
+.Yellow p{
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    margin: 2px;
+    font-size: 20px;
+    
+}
+
+.Red{
+    width: 180px;
+    position: relative;
+    height: 48%;
+    margin-top: 5px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 0, 0);
+    color: #000;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.Red p{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.fourth_container{
+    width: 97%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:10px
+}
+.green{
+    height: 262px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(20, 101, 20);
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid #000;
+}
+.green p{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 5px;
+    
+}
+.green ul{
+    width: 100%;
+    margin-left: 15px;
+    font-size: 20px;
+   
+    
+}
+.green ul li{
+    margin: 5px 0;
+    color: #000;
+}
+
